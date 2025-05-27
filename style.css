@@ -438,3 +438,133 @@ footer {
         grid-template-columns: 1fr; /* Single column for projects */
     }
 }
+
+/* Food Delivery Page Styles */
+.food-header {
+    background: #1a237e;
+    color: #e8eaf6;
+    padding: 20px;
+    text-align: center;
+}
+
+.food-main {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu {
+    flex: 2;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.menu-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.menu-item .price {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+.add-to-cart {
+    background: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #c2185b;
+}
+
+.cart {
+    flex: 1;
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.cart h2 {
+    margin-bottom: 15px;
+}
+
+#cart-items li {
+    margin-bottom: 5px;
+}
+
+.bill-item {
+    margin-top: 10px;
+}
+
+.bill-item.total {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.place-order-btn {
+    margin-top: 15px;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.place-order-btn:disabled {
+    background: #9fa8da;
+    cursor: not-allowed;
+}
+
+.order-message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .food-main {
+        flex-direction: column;
+    }
+}

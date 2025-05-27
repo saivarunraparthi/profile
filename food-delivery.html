@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="food-page">
+    <header class="food-header">
+        <h1>Food Delivery Service</h1>
+    </header>
+    <main class="food-main container">
+        <section class="menu" id="menu">
+            <h2>Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>A classic delight with fresh tomatoes, mozzarella, and basil.</p>
+                    <span class="price" data-price="12.99">$12.99</span>
+                    <button class="add-to-cart" data-name="Margherita Pizza" data-price="12.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36?auto=format&fit=crop&w=400&q=80" alt="Veggie Burger">
+                    <h3>Veggie Burger</h3>
+                    <p>Loaded with fresh veggies and served on a toasted bun.</p>
+                    <span class="price" data-price="9.50">$9.50</span>
+                    <button class="add-to-cart" data-name="Veggie Burger" data-price="9.50">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=400&q=80" alt="Chicken Caesar Salad">
+                    <h3>Chicken Caesar Salad</h3>
+                    <p>Grilled chicken served over crisp romaine with parmesan.</p>
+                    <span class="price" data-price="10.25">$10.25</span>
+                    <button class="add-to-cart" data-name="Chicken Caesar Salad" data-price="10.25">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="cart" id="cart">
+            <h2>Your Order</h2>
+            <ul id="cart-items"></ul>
+            <p class="bill-item">Subtotal: $<span id="subtotal">0.00</span></p>
+            <p class="bill-item">Tax (5%): $<span id="tax">0.00</span></p>
+            <p class="bill-item total">Total: $<span id="total">0.00</span></p>
+            <button id="place-order" class="place-order-btn" disabled>Place Order</button>
+            <p id="order-message" class="order-message hidden"></p>
+        </section>
+    </main>
+    <script src="food-script.js"></script>
+</body>
+</html>
